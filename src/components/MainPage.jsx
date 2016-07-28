@@ -8,18 +8,16 @@ import { Grid, Col, Row } from '@teachers/tpt-ui';
 const MainPage = () => (
   <div>
     <Header />
-      
-
-      <Grid className="no-padding" fluid>
-        <Row>
-          <Col xs={12}>
-            <div className="intro">
-              <h1>Refry</h1>
-              <h3>React Data Fetching for the REST</h3>
-            </div>
-          </Col>
-        </Row>
-      </Grid>
+    <Grid className="no-padding" fluid>
+      <Row>
+        <Col xs={12}>
+          <div className="intro">
+            <h1>Refry</h1>
+            <h3>React Data Fetching for the REST</h3>
+          </div>
+        </Col>
+      </Row>
+    </Grid>
 
       <Grid>
         <Row>

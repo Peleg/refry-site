@@ -10,15 +10,15 @@ const Header = () => (
 			<Col xs={6}>
 				<TopNav 
 					links={
-				        [
-				          { label: "title1", link: '#title1' },
-				          { label: "title2", link: '#title2' },
-				          { label: "title3", link: '#title3' },
-				          { label: "title4", link: '#title4' },
-				          { label: "title5", link: '#title5' }
-				        ]
-				     }
-				 />
+						[
+  						{ label: "title1", link: '#title1' },
+  						{ label: "title2", link: '#title2' },
+  						{ label: "title3", link: '#title3' },
+  						{ label: "title4", link: '#title4' },
+  						{ label: "title5", link: '#title5' }
+						]
+					}
+				/>
 			</Col>
 		</Row>
 	</Grid>
