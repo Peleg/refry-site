@@ -2,9 +2,11 @@ a, a:visited {
   color: #272b33;
 }
 body {
-  background-color: #E6E2AF;
+  background-color: white;
   color: #272b33;
   font-family: Lato, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -22,18 +24,36 @@ body {
   }
 }
 
-.header {
+.no-padding {
+  padding: 0;
+}
+
+.intro {
+  overflow: auto;
   font-family: Raleway;
   text-align: center;
-  color: #272b33;
-  margin: 20px;
+  color: white;
+  background-color: #28a1db;
+  height: 150px;
   > * {
     margin: 10px;
   }
 }
 
-hr {
-  border-color: #abb1c2;
-  border-bottom: none;
-  margin: 30px 50px;
+.TopNav {
+  text-align: right;
+  .A__label, .TopNav__margin {
+    vertical-align: middle;
+  }
 }
+
+.TopNav__line {
+  display: none;
+}
+
+.Header {
+  border-bottom: 2px solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+

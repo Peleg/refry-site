@@ -10,7 +10,8 @@ const isProduction = env === 'production';
 
 const entryPoints = [
   path.join(__dirname, 'src', 'bootstrap'),
-  path.join(__dirname, 'src', 'style.scss')
+  path.join(__dirname, 'src', 'style.scss'),
+  path.join(__dirname, '/node_modules/@teachers/tpt-snacks/scss', 'index.scss')
 ];
 
 const plugins = [
@@ -38,10 +39,10 @@ if (isProduction) {
   );
 } else {
   devtool = false;
-  entryPoints.unshift('webpack-dev-server/client?http://localhost:8080');
 }
 
 module.exports = {
+  watch: !isProduction,
   devtool,
   entry: {
     main: entryPoints,
@@ -66,7 +67,9 @@ module.exports = {
       { test: /\.json$/, loader: 'json-loader' },
       { test: require.resolve('react'), loader: 'expose?React' },
       { test: require.resolve('react-dom'), loader: 'expose?ReactDOM' },
-      { test: require.resolve('@teachers/tpt-connect'), loader: 'expose?Refry' }
+      { test: require.resolve('@teachers/tpt-connect'), loader: 'expose?Refry' },
+      { test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' },
+      { test: /\.(png|jpg|gif)$/, loader: 'url?limit=8192' }
       // uglify everything before so we can analyze size appropriately
       // { test: /\.jsx?$/, loader: 'uglify' }
     ]
