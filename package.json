@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js",
-    "build": "NODE_ENV=production webpack --progress"
+    "build": "NODE_ENV=production webpack --progress && mv dist/* ./"
   },
   "devDependencies": {
     "@teachers/tpt-connect": "0.2.0-beta.10",
