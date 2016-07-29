@@ -5,7 +5,7 @@ import { Router, browserHistory, Route } from 'react-router';
 
 const tree = (
   <Router history={ browserHistory }>
-     <Route name="index" path="/" component={ MainPage }/>
+     <Route name="index" path="*" component={ MainPage }/>
   </Router>
 );
 
