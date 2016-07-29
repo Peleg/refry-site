@@ -1,0 +1,21 @@
+.cm-s-neat span.cm-comment { color: #969896; }
+.cm-s-neat span.cm-keyword { line-height: 20px; font-weight: bold; color: #a71d5d; }
+.cm-s-neat span.cm-string { color: #183691; }
+.cm-s-neat span.cm-builtin { line-height: 1em; font-weight: bold; color: #0086b3; }
+.cm-s-neat span.cm-special { line-height: 1em; font-weight: bold; color: #63a35c; }
+.cm-s-neat span.cm-variable { color: #0086b3; }
+.cm-s-neat span.cm-number, .cm-s-neat span.cm-atom { color: #3a3; }
+.cm-s-neat span.cm-meta { color: #555; }
+.cm-s-neat span.cm-link { color: #3a3; }
+.cm-s-neat span.cm-tag { color: #0086b3; }
+.cm-s-neat span.cm-atom	{ color: #0086b3; }
+.cm-s-neat span.cm-operator { color: #a71d5d; }
+.cm-s-neat span.cm-attribute { color: #795da3; }
+
+.cm-s-neat .CodeMirror-activeline-background { background: #e8f2ff; }
+.cm-s-neat .CodeMirror-matchingbracket { outline:1px solid grey; color:black !important; }
+
+.CodeMirror pre {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}

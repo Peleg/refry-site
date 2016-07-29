@@ -6,7 +6,7 @@ import stage0 from 'babel-preset-stage-0';
 import react from 'babel-preset-react';
 import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/cobalt.css';
+import './codeMirrorColors.scss';
 import 'codemirror/mode/jsx/jsx';
 import './CodePlayground.scss';
 
@@ -94,7 +94,7 @@ class CodePlayground extends Component {
             onChange={ this.handleChange.bind(this) }
             options={ {
               mode: 'jsx',
-              theme: 'cobalt',
+              theme: 'neat',
               indentWithTabs: false,
               indentUnit: 2
             } }

@@ -2,6 +2,8 @@
   text-align: center;
   position: relative;
   overflow: auto;
+  background-color: #f9f9f9;
+  border:1px solid black;
   &__iframe, &__editor {
     text-align: left;
     height: 470px;

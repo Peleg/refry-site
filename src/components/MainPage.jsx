@@ -40,16 +40,20 @@ const MainPage = () => (
             <a target="_blank" href="https://github.com/reactjs/react-redux">Redux</a> state.
             </p>
 
+            <h3 id="install" className="anchor" > Installation </h3>
+            <p> To install: <code> npm install --save refry </code> </p>
+
+            <h3 id="usage" className="anchor"> Usage </h3>
+            
             <p>
             This is what your component could look like:
             </p>
 
             <Example1 />
 
-            <h3 id="install" className="anchor" > Installation </h3>
-            <p> In order to install, <code> npm install --save refry </code> </p>
+      
 
-            <h3 id="usage" className="anchor"> Usage </h3>
+          
             <p>
             By defining your components data dependencies with the <code> resources
             </code> decorator, you tell Refry to load your Post on <code>
@@ -63,7 +67,7 @@ const MainPage = () => (
             </p>
 
             <hr />
-            <h3 id="Examples" className="anchor"> Coding Examples </h3>
+            <h3 id="examples" className="anchor"> Coding Examples </h3>
             <p>
               That's good and dandy, but what about some more complex components?
             </p>
