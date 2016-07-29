@@ -31,6 +31,7 @@ const MainPage = () => (
           of having to make any backend changes to your existing application.
           </p>
 
+          <Example0 />
 
           <p>
           Refry automatically fetches your components' data dependencies on&nbsp;
@@ -64,7 +65,6 @@ const MainPage = () => (
           will just re-render your component when it is.
           </p>
 
-          <hr />
           <h3 id="examples" className="anchor"> Coding Examples </h3>
           <p>
             That's good and dandy, but what about some more complex components?
@@ -121,8 +121,6 @@ const MainPage = () => (
           setting the <code> refetchAfter </code> property to <code> 'success'
           </code>.
           </p>
-
-          <hr />
 
           <Example3 />
 

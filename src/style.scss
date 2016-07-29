@@ -16,6 +16,10 @@ body {
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .anchor {
   padding-top: 45px;
 }
@@ -37,7 +41,7 @@ body {
 }
 
 .intro {
-  padding-top: 45px;
+  padding: 4em 0 2em;
   overflow: auto;
   font-family: Raleway;
   text-align: center;
