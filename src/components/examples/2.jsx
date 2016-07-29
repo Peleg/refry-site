@@ -21,8 +21,9 @@ const Example2 = () => (
 
     comments: {
       url: \`https://myapi.com/posts/\${ownProps.id}/comments/\`,
-      schema: arrayOf(postSchema), // allows Refry to normalize your data
-                                   // and store it with the rest of users
+      // allows Refry to normalize your data
+      // and store it with the rest of posts
+      schema: arrayOf(postSchema),
       auto: false,
       actions: {
         remove: (commentId) => ({
@@ -49,7 +50,9 @@ const Example2 = () => (
         : comments.value.map((commentProps, idx) => (
           <div key={ idx }>
             <p>{ idx + 1 }. { commentProps.body }</p>
-            <button onClick={ () => comments.remove(commentProps.id) }>
+            <button onClick={ () =>
+              comments.remove(commentProps.id)
+            }>
               Remove Comment
             </button>
           </div>));
@@ -63,8 +66,12 @@ const Example2 = () => (
             <h2>{ post.value.title }</h2>
             <p>{ post.value.body }</p>
             <button onClick={ post.fetch }>Reload!</button>
-            <button onClick={ this.deletePost.bind(this) }>Delete Post</button>
-            <button onClick={ comments.fetch }>Load Post's Comments</button>
+            <button onClick={ this.deletePost.bind(this) }>
+              Delete Post
+            </button>
+            <button onClick={ comments.fetch }>
+              Load Post's Comments
+            </button>
             { this.renderComments() }
           </div>;
     }

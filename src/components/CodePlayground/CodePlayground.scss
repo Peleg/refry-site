@@ -6,32 +6,16 @@
   border:1px solid black;
   &__iframe, &__editor {
     text-align: left;
-    height: 470px;
     padding: 10px;
     margin: 10px 0;
-    box-sizing: border-box;
-    vertical-align: top;
-    display: inline-block;
   }
   &__iframe {
-    width: 300px;
+    position: relative;
     iframe {
+      position: relative;
+      max-width: 100%;
       background: white;
       border: none;
-      width: 100%;
-      height: 100%;
     }
-  }
-  &__editor .CodeMirror {
-    height: 450px;
-    width: 500px;
-  }
-  &__iframe iframe,
-  &__editor .CodeMirror {
-    border-radius: 6px;
-  }
-  &:after {
-    content: '';
-    clear: both;
   }
 }

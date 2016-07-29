@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { transform } from 'babel-core';
+import { Grid, Row, Col } from '@teachers/tpt-ui';
 import transformLegacyDecorators from 'babel-plugin-transform-decorators-legacy';
 import es2015 from 'babel-preset-es2015';
 import stage0 from 'babel-preset-stage-0';
@@ -88,21 +89,29 @@ class CodePlayground extends Component {
     const { code } = this.state;
     return (
       <div className="CodePlayground">
-        <div className="CodePlayground__editor">
-          <CodeMirror
-            value={ code }
-            onChange={ this.handleChange.bind(this) }
-            options={ {
-              mode: 'jsx',
-              theme: 'neat',
-              indentWithTabs: false,
-              indentUnit: 2
-            } }
-          />
-        </div>
-        <div className="CodePlayground__iframe">
-          { this.renderIframe() }
-        </div>
+        <Grid>
+          <Row className="center-xs">
+            <Col md={8}>
+              <div className="CodePlayground__editor">
+                <CodeMirror
+                  value={ code }
+                  onChange={ this.handleChange.bind(this) }
+                  options={ {
+                    mode: 'jsx',
+                    theme: 'neat',
+                    indentWithTabs: false,
+                    indentUnit: 2
+                  } }
+                />
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="CodePlayground__iframe">
+                { this.renderIframe() }
+              </div>
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }

@@ -12,15 +12,13 @@ const Header = () => (
             </Col>
             <Col xs={6}>
               <TopNav
-                links={
-                  [
-                      { label: 'About', link: '#about' },
-                      { label: 'Installation', link: '#install' },
-                      { label: 'Usage', link: '#usage' },
-                      { label: 'Examples', link: '#examples' },
-                      { label: 'API', link: '#api' }
-                  ]
-                }
+                links={ [
+                    { label: 'About', link: '#about' },
+                    { label: 'Installation', link: '#install' },
+                    { label: 'Usage', link: '#usage' },
+                    { label: 'Examples', link: '#examples' },
+                    { label: 'API', link: '#api' }
+                ] }
               />
             </Col>
           </Row>
